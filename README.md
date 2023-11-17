@@ -23,3 +23,7 @@ pnpm dev
 # or
 bun dev
 ```
+
+## Application
+
+![conversation-git](./src/assets/testevue.gif)
