@@ -14,7 +14,7 @@ export default defineComponent({
     <div class="header-home">
       <h1>JSeries</h1>
     </div>
-    <h1 class="title-body">Séries</h1>
+    <h1 class="title-body">Series</h1>
     <GridList />
   </div>
 </template>

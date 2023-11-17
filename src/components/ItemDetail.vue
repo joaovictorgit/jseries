@@ -25,20 +25,20 @@ export default defineComponent({
           {{ contentWithoutHtml ? contentWithoutHtml : null }}
         </label>
         <div class="container-genres">
-          <span>Gênero: </span>
+          <span>Gender: </span>
           <div class="genre" v-for="s in itemSerie.key.genres" :key="s">
             <label>{{ s }}</label>
           </div>
         </div>
         <div class="quantity-episodes">
           <span
-            >Episódios:
+            >Episodes:
             {{ quantityEpisodes }}
           </span>
         </div>
         <div className="container-average">
           <span className="average">
-            Avaliação:
+            Assessment:
             {{ itemSerie.key.rating.average ? itemSerie.key.rating.average : null }}</span
           >
         </div>

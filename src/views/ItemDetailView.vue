@@ -111,20 +111,20 @@ export default defineComponent({
               {{ contentWithoutHtml ? contentWithoutHtml : null }}
             </label>
             <div class="container-genres">
-              <span>Gênero: </span>
+              <span>Gender: </span>
               <div class="genre" v-for="s in itemSerie.key.genres" :key="s">
                 <label>{{ s }}</label>
               </div>
             </div>
             <div class="quantity-episodes">
               <span
-                >Episódios:
+                >Episodes:
                 {{ quantityEpisodes }}
               </span>
             </div>
             <div className="container-average">
               <span className="average">
-                Avaliação:
+                Assessment:
                 {{ itemSerie.key.rating.average ? itemSerie.key.rating.average : null }}</span
               >
             </div>
@@ -132,12 +132,12 @@ export default defineComponent({
         </div>
       </div>
       <div class="form-comments">
-        <h1>Comentários</h1>
-        <textarea ref="commentSerie" type="text" placeholder="Escreva seu comentário"></textarea>
+        <h1>Comments</h1>
+        <textarea ref="commentSerie" type="text" placeholder="Write your comment"></textarea>
         <button @click="addNewComment">Add</button>
 
         <div class="item-comment" v-for="(c, index) in comments" :key="index">
-          <h1>Usuário {{ index + 1 }}</h1>
+          <h1>User {{ index + 1 }}</h1>
           <label>
             {{ c.text }}
           </label>
